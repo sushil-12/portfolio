@@ -29,7 +29,7 @@ const config = {
       colors: {
         black: {
           DEFAULT: "#000",
-          100: "#000319",
+          100: "#0B132A",
           200: "rgba(17, 25, 40, 0.75)",
           300: "rgba(255, 255, 255, 0.125)",
         },
@@ -37,9 +37,21 @@ const config = {
           DEFAULT: "#FFF",
           100: "#BEC1DD",
           200: "#C1C2D3",
+          300: '#F6F5F2'
         },
         blue: {
           "100": "#E4ECFF",
+        },
+        orange: {
+          100: '#F6F5F2',
+          200: '#FBE4D5',
+          300: '#F9D1B7',
+          400: '#F5B58D',
+          500: '#F19563',
+          600: '#EE6E31',
+          700: '#E85615',
+          800: '#DB4211',
+          900: '#F53838',
         },
         purple: "#CBACF9",
         border: "hsl(var(--border))",
@@ -160,6 +172,14 @@ const config = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+      screens: {
+        'xs': '480px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      }
     },
   },
   plugins: [

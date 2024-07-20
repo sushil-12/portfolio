@@ -19,7 +19,7 @@ export const BentoGrid = ({
         <div
             className={cn(
                 // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
-                "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+                "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto ",
                 className
             )}
         >
@@ -72,15 +72,15 @@ export const BentoGridItem = ({
         <div
             className={cn(
                 // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
-                "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+                "row-span-1 relative overflow-hidden rounded-3xl border  border-white/[0.1] group/bento hover:shadow-xl transition duration-200 e justify-between flex flex-col space-y-4 shadow-none",
                 className
             )}
             style={{
                 //   add these two
                 //   you can generate the color from here https://cssgradient.io/
-                background: "rgb(4,7,29)",
-                backgroundColor:
-                    "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+                // background: "rgb(4,7,29)",
+                // backgroundColor:
+                //     "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
         >
             {/* add img divs */}
@@ -90,7 +90,7 @@ export const BentoGridItem = ({
                         <img
                             src={img}
                             alt={img}
-                            className={cn(imgClassName, "object-cover object-center ")}
+                            className={cn(imgClassName, "object-cover object-center z-10")}
                         />
                     )}
                 </div>
@@ -107,7 +107,7 @@ export const BentoGridItem = ({
                         />
                     )}
                 </div>
-                {id === 6 && (
+                {id === 7 && (
                     // add background animation , remove the p tag
                     <BackgroundGradientAnimation>
                         {/* <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-sm text-center">contact me</div> */}
@@ -121,19 +121,19 @@ export const BentoGridItem = ({
                     )}
                 >
                     {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-                    <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+                    <div className="font-sans md:max-w-32 md:text-xs lg:text-base text-sm  text-black font-semibold z-10">
                         {description}
                     </div>
                     {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
                     {/* remove mb-2 mt-2 */}
                     <div
-                        className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+                        className={`font-sans text-lg lg:text-2xl max-w-96 font-bold z-10 relative top-0`}
                     >
                         {title}
                     </div>
 
                     {/* for the github 3d globe */}
-                    {id === 2 && <GridGlobe />}
+                    {/* {id === 2 && <GridGlobe />} */}
 
                     {/* Tech stack list div */}
                     {id === 3 && (
@@ -144,20 +144,20 @@ export const BentoGridItem = ({
                                     <span
                                         key={i}
                                         className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center  bg-light-100 bg-orange-600 text-white"
                                     >
                                         {item}
                                     </span>
                                 ))}
-                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-light-100 "></span>
                             </div>
                             <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-light-100"></span>
                                 {rightLists.map((item, i) => (
                                     <span
                                         key={i}
                                         className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-orange-600 text-white dark:bg-light-100"
                                     >
                                         {item}
                                     </span>
