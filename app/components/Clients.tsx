@@ -7,7 +7,7 @@ import { InfiniteMovingCards } from "./ui/InfiniteCards";
 
 const Clients = () => {
   return (
-    <section id="recent_projects" className="py-20 bg-orange-100">
+    <section id="recent_projects" className="py-20 bg-gray-50">
       <h1 className="heading text-black">
         Recent Project Roles and 
         <span className="text-orange-900"> Responsibilities Overview</span>
