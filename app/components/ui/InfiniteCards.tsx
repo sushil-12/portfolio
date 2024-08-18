@@ -7,7 +7,7 @@ import { DiAndroid } from "react-icons/di";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "slow",
   pauseOnHover = true,
   className,
 }: {
@@ -119,7 +119,7 @@ export const InfiniteMovingCards = ({
                 <b className="flex gap-2 items-center"><DiAndroid />Key Roles and Responsibilities</b>
                 <ol className="list-disc ml-10">
                   {item.keyRolesAndResponsibilities.map((navItem: any, idx: number) => (
-                    <li>{navItem}</li>
+                    <li key={idx}>{navItem}</li>
                   ))}
                 </ol>
 

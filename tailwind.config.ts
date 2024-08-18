@@ -26,6 +26,13 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      fontSize: {
+        md: '1rem'
+      },
       colors: {
         black: {
           DEFAULT: "#000",

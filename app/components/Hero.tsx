@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="text-center md:tracking-wider text-sm md:text-lg lg:text-2xl flex items-center gap-2 mb-12">
               I&apos;m Sushil, a Full Stack Developer from India. Excited to connect, create, and code with all of you! 🚀✨
             </div>
-            <a href="#about">
+            <a href="#projects">
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}
