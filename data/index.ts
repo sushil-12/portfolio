@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "MetaCommunityHUB",
     des: "Meta’s goal is to help our local communities thrive by facilitating access to the tech ecosystem. We partner with different community organizations, educational platform, and businesses.",
-    img: "https://fbhub.spaces.nexudus.com/images/logotop.png",
+    img: "https://scontent.fixc4-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=108&ccb=1-7&_nc_sid=e280be&_nc_ohc=Gy6D7K62tccQ7kNvgES8lVU&_nc_zt=14&_nc_ht=scontent.fixc4-1.fna&_nc_gid=AoqC5UYZaSEVjPZ0uEJVt9q&oh=00_AYCIhchWh98STDF6Jm9IQxpu-b1m6vQ6WOWKqhp59Mm2Hw&oe=67A04AB9",
     iconLists: ["./re.svg", "./ts.svg"],
     link: "https://fbhub.spaces.nexudus.com/",
   },
