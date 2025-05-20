@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* === Theme Variables === */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -37,7 +36,6 @@
   --color-muted-foreground: #9ca3af;
 }
 
-/* Custom Scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
 }
